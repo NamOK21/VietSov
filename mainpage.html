@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="VIETSOVPETRO - Giới thiệu, sản phẩm, tin tức và nhiều hơn nữa.">
+        <meta name="author" content="Your Name or Organization">
+        <title>VIETSOVPETRO</title>
+        <link rel="icon" href="assets/images/logo.png" type="image/png">
+
+        <!-- Google Fonts Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search"/>
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- GSAP and ScrollTrigger -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+
+        <!-- Split-Type and Lenis -->
+        <script src="https://unpkg.com/split-type"></script>
+        <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+        <script>
+            const lenis = new Lenis()
+            lenis.on('scroll', (e) => {
+                console.log(e)
+            })
+
+            function raf(time) {
+                lenis.raf(time)
+                requestAnimationFrame(raf)
+            }
+            requestAnimationFrame(raf)
+        </script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <header id="header">
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#" aria-label="Go to home page">Trang chủ</a></li>
+                <li><a href="#" aria-label="About us">Giới thiệu</a></li>
+                <li><a href="#" aria-label="Products">Sản phẩm</a></li>
+                <li><a href="#" aria-label="News">Tin tức</a></li>
+            </ul>
+            <a href="mainpage.html"><img src="assets/images/logo.png" alt="Logo" class="logo"></a>
+            <ul>
+                <li><a href="#" aria-label="eOffice portal">eOffice</a></li>
+                <li><a href="#" aria-label="Admissions page">Tuyển sinh</a></li>
+                <li>
+                    <span class="search-icon material-symbols-sharp">search</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    </body>
+
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <!-- Slide 1 -->
+                <div class="image-wrapper">
+                    <img id="slide1" src="assets/images/Variant1.png" alt="Thiet Ke">
+                    <div class="overlay">
+                        <div class="text-box">
+                            <h1>Nghiên cứu thăm dò khai thác dầu khí</h1>
+                            <p>Thiết kế - lên dự toán cho các giếng khoan tìm kiếm, thăm dò cho công ty VRJ, PIDC.
+                                Lập dự án đầu tư xây dựng công trình cải hoàn By Pass đường ống Rạng Đông - Bạch Hổ.</p>
+                            <a href="#" class="button" aria-label="Read more about us">
+                                <p>Xem thêm</p>
+                                <button class="material-symbols-rounded" aria-hidden="true">arrow_forward</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="image-wrapper">
+                    <img id="slide2" src="assets/images/Variant2.png" alt="Thiet Ke">
+                    <div class="overlay">
+                        <div class="text-box">
+                            <h1>Thiết kế các công trình dầu khí biển</h1>
+                            <p> Bộ máy điều hành và 18 đơn vị trực thuộc. Đội ngũ lao động gần 7000 cán bộ khoa học,
+                                kỹ thuật, quản lý và công nhân có trình độ chuyên môn cao...</p>
+                            <a href="#" class="button" aria-label="Read more about us">
+                                <p>Xem thêm</p>
+                                <button class="material-symbols-rounded" aria-hidden="true">arrow_forward</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="image-wrapper">
+                    <img id="slide3" src="assets/images/Variant3.png" alt="Van Hanh">
+                    <div class="overlay">
+                        <div class="text-box">
+                            <h1>Vận hành, sửa chữa và bảo dưỡng các công trình dầu khí</h1>
+                            <p>Lĩnh vực hoạt động chính của Vietsovpetro là nghiên cứu khoa học,
+                                khảo sát, khoan thăm dò địa chất, thiết kế phát triển xây dựng mỏ...</p>
+                            <a href="#" class="button" aria-label="Read more about us">
+                                <p>Xem thêm</p>
+                                <button class="material-symbols-rounded" aria-hidden="true">arrow_forward</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <a href="#slide1" class="active"></a>
+                <a href="#slide2"></a>
+                <a href="#slide3"></a>
+                <button class="pause-btn">Pause</button>
+            </div>
+            <div class="social-icons">
+                <a>Follow us</a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa fa-instagram" id="insta"></i></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa fa-twitter" id="twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="intro-section">
+        <div class="intro-content">
+            <h3>Giới thiệu</h3>
+            <h1 class="scroll-effect">Liên doanh Vietsovpetro</h1>
+            <p class="scroll-effect">
+                Là pháp nhân hợp pháp của nước CHXHCN Việt Nam được thành lập năm 1981.
+                Là đơn vị thành viên của Tập đoàn Dầu khí Quốc gia Việt Nam.
+            </p>
+            <div class="images-container">
+                <div class="images-left">
+                    <img src="assets/images/image67.png" alt="Vietsovpetro Oil Rig Platform 1">
+                </div>
+                <div class="images-right">
+                    <img src="assets/images/image68.png" alt="Vietsovpetro Oil Rig Platform 2">
+                </div>
+                <div class="images-left small">
+                    <img src="assets/images/image70.png" alt="Vietsovpetro Oil Rig Platform 4">
+                </div>
+                <div class="images-right">
+                    <img src="assets/images/image69.png" alt="Vietsovpetro Oil Rig Platform 3">
+                </div>
+            </div>
+            <div class="intro-footer-content">
+                <p class="scroll-effect">
+                    Doanh nghiệp hàng đầu <span>trong lĩnh vực</span> Tìm kiếm, thăm dò địa chất và khai thác dầu khí tại Việt Nam;
+                    <span>là</span> đối tác tin cậy, <span>giúp đáp ứng nhu cầu</span> gia tăng năng lượng <span>trong</span>
+                    sản xuất và tiêu dùng của Việt Nam <span>theo hướng hiệu quả và bền vững.</span>
+                </p>
+                <a href="#" class="intro-button" aria-label="Read more about us">
+                    Đọc thêm về chúng tôi
+                    <button class="material-symbols-rounded" aria-hidden="true">arrow_forward</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="body">
+    <div class="body-wrapper">
+        <h3>Sản phẩm - Dịch vụ</h3>
+        <h1>Sản phẩm, dịch vụ Vietsovpetro</h1>
+        <p>Với kinh nghiệm và nguồn lực sẵn có, Vietsovpetro luôn sẵn sàng hợp tác với các công ty dầu khí
+            trong nước và quốc tế để cung cấp các loại hình dịch vụ chất lượng cao trong các lĩnh vực sau đây</p>
+        <div class="body-container">
+            <img class="body-images" id="img1" src="assets/images/service/img1.png" alt="Offshore Rig">
+            <img class="body-images" id="img2" src="assets/images/service/img2.png" alt="Offshore Rig">
+            <img class="body-images" id="img3" src="assets/images/service/img3.png" alt="Offshore Rig">
+            <img class="body-images" id="img4" src="assets/images/service/img4.png" alt="Offshore Rig">
+            <img class="body-images" id="img5" src="assets/images/service/img5.png" alt="Offshore Rig">
+            <img class="body-images" id="img6" src="assets/images/service/img6.png" alt="Offshore Rig">
+            <img class="body-images" id="img7" src="assets/images/service/img7.png" alt="Offshore Rig">
+            <img class="body-images" id="img8" src="assets/images/service/img8.png" alt="Offshore Rig">
+            <img class="body-images" id="img9" src="assets/images/service/img9.png" alt="Offshore Rig">
+        </div>
+    </div>
+    </section>
+
+
+<section class="cards">
+    <h4>Dự án tiêu biểu</h4>
+    <div class="card-container" id="card">
+        <div class="project-card" id="card1">
+            <div class="card-image">
+                <img src="assets/images/Frame625865.png" alt="Offshore Rig">
+            </div>
+            <div class="card-content no-select">
+                <h1>Dự án điều hành khai thác mỏ</h1>
+                <p>
+                    Sáng ngày 20/9/2024 tại trụ sở của Vietsovpetro đã tổ chức buổi làm việc đầu tiên
+                    Chương trình làm việc tài trợ học bổng nghiên cứu khoa học giữa Vietsovpetro và
+                    Trường Đại học Dầu khí Việt Nam (PVU). Đây là một trong những nội dung liên quan
+                    đến thỏa thuận hợp tác giữa Vietsovpetro và PVU đã ký kết vào cuối năm 2023.
+                </p>
+                <a href="#" class="project-card-button" aria-label="Read more about us">
+                    Đọc thêm
+                    <button class="material-symbols-rounded" aria-hidden="true">arrow_forward</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card hidden" id="card2">
+            <div class="card-image">
+                <img src="assets/images/Frame625866.png" alt="Offshore Rig">
+            </div>
+            <div class="card-content no-select">
+                <h1>Xí nghiệp khai thác dầu khí</h1>
+                <p>
+                    Xí nghiêp Khai thác Dầu khí với gần 1700 cán bộ công nhân viên hiện đang quản lý và vận hành
+                    13 giàn cố định có công suất khai thác 20.000 tấn dầu/ ngày đêm; 28 giàn đầu giếng WHP với số
+                    giếng khai thác bình quân một giàn là 12 giếng; 2 cụm giàn Công nghệ trung tâm có công suất xử lý
+                    40.000 tấn dầu/ngày đêm; 2 giàn bơm nước ép vỉa có công suất 70.000 m3/ngày đêm; 3 trạm rót dầu
+                    không bến FSO có tổng sức chứa hơn 450 ngàn tấn; trên 250 km đường ống ngầm vận chuyển dầu, khí, nước nội mỏ.
+                </p>
+                <a href="#" class="project-card-button project-card-button2" aria-label="Read more about us">
+                    Đọc thêm
+                    <button class="material-symbols-rounded" aria-hidden="true">arrow_forward</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="res-card">
+            <div class="res-card-slides">
+                <div class="res-card-image">
+                    <img src="assets/images/doitac1.png">
+                </div>
+                <div class="res-card-content">
+                    <h1>Đối tác nói về chúng tôi</h1>
+                    <p>
+                        Xí nghiệp có đội ngũ nhân lực với gần 1400 CBCNV có trình độ cao,
+                        chuyên nghiệp và giàu kinh nghiệm thuộc nhiều ngành, nghề như xây dựng,
+                        công nghệ hàn, điện, điện tự động, chống ăn mòn, kim loại học, cơ khí, máy xây dựng,...
+                    </p>
+                    <h3>www.vietsov.com.vn</h3>
+
+                    <div class="button-container">
+                        <button style="transform: rotate(180deg)" class="cta-button material-symbols-rounded" id="left">arrow_forward</button>
+                        <button class="cta-button material-symbols-rounded" id="right">arrow_forward</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="res-card-slides">
+                <div class="res-card-image">
+                    <img src="assets/images/doitac2.png">
+                </div>
+                <div class="res-card-content">
+                    <h1>Đối tác nói về chúng tôi</h1>
+                    <p>
+                        Hệ thống quản lý chất lượng theo tiêu chuẩn ISO 9001:2008, OHSAS 18001:2007;
+                        Chứng chỉ quản lý chất lượng phòng thử nghiệm & hiệu chuẩn theo ISO/IEC 17025;
+                        Chứng chỉ chế tạo bình áp lực theo tiêu chuẩn ASME stamp USR; ...
+                    </p>
+                    <h3>Xí nghiệp xây lắp, khảo sát</h3>
+
+                    <div class="button-container">
+                        <button style="transform: rotate(180deg)" class="cta-button material-symbols-rounded" id="left">arrow_forward</button>
+                        <button class="cta-button material-symbols-rounded" id="right">arrow_forward</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="res-card-slides">
+                <div class="res-card-image">
+                    <img src="assets/images/doitac3.png">
+                </div>
+                <div class="res-card-content">
+                    <h1>Đối tác nói về chúng tôi</h1>
+                    <p>
+                        Hiện nay, nguồn nhân lực của Xí nghiệp Cơ điện bao gồm hơn 600 CBCNV, 09 phòng ban chức năng,
+                        05 xưởng sản xuất trên bờ, 16 ban Cơ điện trên các công trình biển, trong đó
+                        hơn 250 cán bộ công nhân viên có trình độ từ đại học trở lên và 350 công nhân kỹ thuật các ngành nghề.
+                    </p>
+                    <h3>www.codienvsp.com.vn</h3>
+
+                    <div class="button-container">
+                        <button style="transform: rotate(180deg)" class="cta-button material-symbols-rounded" id="left">arrow_forward</button>
+                        <button class="cta-button material-symbols-rounded" id="right">arrow_forward</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="res-card-slides">
+                <div class="res-card-image">
+                    <img src="assets/images/doitac4.png">
+                </div>
+                <div class="res-card-content">
+                    <h1>Đối tác nói về chúng tôi</h1>
+                    <p>
+                        Tại buổi gặp gỡ Thủ tướng, ông Yasser M.Mufti bày tỏ nguyện vọng muốn tìm hiểu
+                        nghiên cứu thị trường để có cơ hội tiến hành đầu tư tại Việt Nam,
+                        nhất là trong xây dựng các nhà máy lọc hóa dầu.
+                    </p>
+                    <h3>Mr. Yasser M.Mufti</h3>
+
+                    <div class="button-container">
+                        <button style="transform: rotate(180deg)" class="cta-button material-symbols-rounded" id="left">arrow_forward</button>
+                        <button class="cta-button material-symbols-rounded" id="right">arrow_forward</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="news">
+        <h3>Tin mới nhất</h3>
+        <h1>Tin tức - sự kiện</h1>
+        <!-- Swiper -->
+        <div class="swiper news-container">
+            <ul class="swiper-wrapper">
+                <li class="news-card-items swiper-slide">
+                    <a href="#" class="news-card">
+                        <img src="assets/images/news/Frame1.png" alt="Card Image" class="card-image">
+                        <h3 class="title">HOẠT ĐỘNG SẢN XUẤT</h3>
+                        <p class="news-contents">Chương trình hợp tác giữa Vietsovpetro và PVU:
+                            Bước tiến mới thúc đẩy nghiên cứu khoa học và phát triển nguồn nhân lực Dầu khí</p>
+                        <i href="#" class="news-button" aria-label="Read more about us">
+                            <p>Đọc thêm</p>
+                            <button class="material-symbols-rounded" aria-hidden="true">arrow_forward</button>
+                        </i>
+                    </a>
+                </li>
+
+                <li class="news-card-items swiper-slide">
+                    <a href="#" class="news-card">
+                        <img src="assets/images/news/Frame2.png" alt="Card Image" class="card-image">
+                        <h3 class="title">HOẠT ĐỘNG ĐOÀN THỂ</h3>
+                        <p class="news-contents">Tuần lễ Văn hóa Thể thao BMĐH năm 2024 - Sân chơi thể thao bổ ích cho người lao động</p>
+                        <i href="#" class="news-button" aria-label="Read more about us">
+                            <p>Đọc thêm</p>
+                            <button class="material-symbols-rounded" aria-hidden="true">arrow_forward</button>
+                        </i>
+                    </a>
+                </li>
+
+                <li class="news-card-items swiper-slide">
+                    <a href="#" class="news-card">
+                        <img src="assets/images/news/Frame3.png" alt="Card Image" class="card-image">
+                        <h3 class="title">TIN DẦU KHÍ</h3>
+                        <p class="news-contents">Đoàn cán bộ, chuyên gia Gazprom thăm,
+                            tìm hiểu thực tế và trao đổi kinh nghiệm tại Vietsovpetro</p>
+                        <i href="#" class="news-button" aria-label="Read more about us">
+                            <p>Đọc thêm</p>
+                            <button class="material-symbols-rounded" aria-hidden="true">arrow_forward</button>
+                        </i>
+                    </a>
+                </li>
+
+                <li class="news-card-items swiper-slide">
+                    <a href="#" class="news-card">
+                        <img src="assets/images/news/Frame4.png" alt="Card Image" class="card-image">
+                        <h3 class="title">HOẠT ĐỘNG ĐOÀN THỂ</h3>
+                        <p class="news-contents">Đẩy mạnh chiến lược thu hút nhân tài qua chương trình “VIETSOVPETRO FIELD TRIP”</p>
+                        <i href="#" class="news-button" aria-label="Read more about us">
+                            <p>Đọc thêm</p>
+                            <button class="material-symbols-rounded" aria-hidden="true">arrow_forward</button>
+                        </i>
+                    </a>
+                </li>
+
+                <li class="news-card-items swiper-slide">
+                    <a href="#" class="news-card">
+                        <img src="assets/images/news/Frame1.png" alt="Card Image" class="card-image">
+                        <h3 class="title">HOẠT ĐỘNG SẢN XUẤT</h3>
+                        <p class="news-contents">Chương trình hợp tác giữa Vietsovpetro và PVU:
+                            Bước tiến mới thúc đẩy nghiên cứu khoa học và phát triển nguồn nhân lực Dầu khí</p>
+                        <i href="#" class="news-button" aria-label="Read more about us">
+                            <p>Đọc thêm</p>
+                            <button class="material-symbols-rounded" aria-hidden="true">arrow_forward</button>
+                        </i>
+                    </a>
+                </li>
+
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-content">
+                <a href="#"><img src="assets/images/logo.png" alt="Company Logo"></a>
+                <h1>Liên doanh Vietsovpetro</h1>
+                <address>
+                    <h4>105 Lê Lợi, P.Thắng Nhì, TP.Vũng Tàu, Tỉnh Bà Rịa-Vũng Tàu, Việt Nam</h4>
+                    <h4>Email: <a>vspadmin@vietsov.com.vn</a></h4>
+                    <h4>Điện thoại: +84.254.3839 871</h4>
+                    <h4>Fax: +84.254.3839857</h4>
+                </address>
+                <div class="social-links">
+                    <a href="https://www.youtube.com" target="_blank"><img src="assets/images/insta.png" alt="Instagram"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="assets/images/twitter.png" alt="Twitter"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="assets/images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="assets/images/youtube.png" alt="YouTube"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="assets/images/tiktok.png" alt="TikTok"></a>
+                </div>
+                <div class="arrow-content">
+                    <a>Website đơn vị thành viên</a>
+                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                </div>
+            </div>
+
+            <div class="footer-link">
+                <div class="footer-column">
+                    <ul>
+                        <h1>Giới thiệu</h1>
+                        <li><a href="#">Lịch sử hình thành</a></li>
+                        <li><a href="#">Cơ cấu tổ chức</a></li>
+                        <li><a href="#">Ban lãnh đạo</a></li>
+                        <li><a href="#">Thành tựu nổi bật</a></li>
+                        <li><a href="#">Hình ảnh tư liệu</a></li>
+                    </ul>
+                    <ul>
+                        <h1>Sản phẩm-Dịch vụ</h1>
+                        <li><a href="#">Thiết kế các công trình dầu khí</a></li>
+                        <li><a href="#">Nghiên cứu thăm dò khai thác</a></li>
+                        <li><a href="#">Dịch vụ vận tải biển</a></li>
+                        <li><a href="#">Đào tạo nâng bậc thợ</a></li>
+                        <li><a href="#">Dịch vụ cung ứng vật tư thiết bị</a></li>
+                    </ul>
+                    <ul>
+                        <h1>Nguồn lực</h1>
+                        <li><a href="#">Nguồn lực nhân sự</a></li>
+                        <li><a href="#">Cơ sở vật chất</a></li>
+                        <li><a href="#">Năng lực tài chính</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <h1>Đơn vị trực thuộc</h1>
+                        <li><a href="#">Xí nghiệp khai thác dầu khí</a></li>
+                        <li><a href="#">Xí nghiệp vận tải biển</a></li>
+                        <li><a href="#">Viện nghiên cứu khoa học</a></li>
+                        <li><a href="#">Xí nghiệp cơ điện</a></li>
+                        <li><a href="#">Xí nghiệp địa vật lý giếng</a></li>
+                    </ul>
+                    <ul>
+                        <h1>Dự án - Đối tác</h1>
+                        <li><a href="#">Dự án khai thác dầu khí</a></li>
+                        <li><a href="#">Điều hành khai thác mỏ</a></li>
+                        <li><a href="#">Thiết kế, mua sắm, xây dựng</a></li>
+                        <li><a href="#">Dự án lắp đặt chân đế</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Bản quyền © 2024 thuộc về Liên doanh Vietsovpetro</p>
+            <a href="#">Điều khoản & Điều kiện</a>
+            <a href="#">Quyền riêng tư dữ liệu</a>
+        </div>
+    </footer>
+
+</html>
