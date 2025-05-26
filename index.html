@@ -43,18 +43,19 @@
             requestAnimationFrame(raf)
         </script>
         <link rel="stylesheet" href="styles.css">
+
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+
+        <script>
+            $(windows).on("load", function() {
+                $(".loader-wrapper").fadeOut("slow");
+            });
+        </script>
     </head>
+
     <body>
-    <div class="loader-wrapper">
-        <span class="loader"><span class="loader-inner"></span></span>
-    </div>
-
-    <script>
-        $(windows).on("load", function() {
-            $(".loader-wrapper").fadeOut("slow");
-        });
-    </script>
-
     <header id="header">
         <nav aria-label="Main Navigation">
             <ul>
